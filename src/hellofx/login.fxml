@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.LoginController" style="-fx-background-color: linear-gradient(to bottom, #4e54c8, #8f94fb);">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="hellofx.LoginController" 
+    style="-fx-background-color: linear-gradient(to bottom, #4e54c8, #8f94fb);">
     <center>
         <VBox spacing="20" alignment="CENTER">
-            <!-- Logo Image - add your image in src/hellofx/images -->
-            <ImageView fitWidth="200" preserveRatio="true">
-                <image>
-                    <Image url="@images/WhatsApp_Image_2025-03-18_at_16.11.26.jpg" />
-                </image>
-            </ImageView>
-            <Label text="Telecom Billing System" style="-fx-text-fill: white; -fx-font-size: 36px; -fx-font-weight: bold;"/>
-            <GridPane hgap="15" vgap="15" alignment="CENTER" style="-fx-background-color: rgba(255, 255, 255, 0.9); -fx-padding: 25; -fx-background-radius: 10;">
+            <Label text="Telecom Billing System" 
+                style="-fx-text-fill: white; -fx-font-size: 36px; -fx-font-weight: bold;"/>
+            <GridPane hgap="15" vgap="15" alignment="CENTER" 
+                style="-fx-background-color: rgba(255, 255, 255, 0.9); -fx-padding: 25; -fx-background-radius: 10;">
                 <padding>
                     <Insets top="25" right="25" bottom="25" left="25"/>
                 </padding>
-                <Label text="Username:" style="-fx-font-size: 40px; -fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-                <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-font-size: 40px;" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-                <Label text="Password:" style="-fx-font-size: 40px; -fx-font-weight: bold;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-                <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 40px;" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-                <Button text="Login" onAction="#handleLoginAction" style="-fx-background-color: #4e54c8; -fx-text-fill: white; -fx-font-size: 40px; -fx-cursor: hand;" GridPane.rowIndex="2" GridPane.columnIndex="1">
-                    <effect>
-                        <DropShadow radius="10" offsetX="0" offsetY="4" color="#333333"/>
-                    </effect>
-                </Button>
-                <Label fx:id="statusLabel" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" style="-fx-font-size: 14px; -fx-text-fill: #cc0000;"/>
+                <Label text="Username:" 
+                    style="-fx-font-size: 40px; -fx-font-weight: bold;" 
+                    GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="usernameField" promptText="Enter your username" 
+                    style="-fx-font-size: 40px;" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Password:" 
+                    style="-fx-font-size: 40px; -fx-font-weight: bold;" 
+                    GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <PasswordField fx:id="passwordField" promptText="Enter your password" 
+                    style="-fx-font-size: 40px;" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Button text="Login" onAction="#handleLoginAction" 
+                    style="-fx-background-color: #4e54c8; -fx-text-fill: white; -fx-font-size: 40px; -fx-cursor: hand;" 
+                    GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Label fx:id="statusLabel" 
+                    GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" 
+                    style="-fx-font-size: 14px; -fx-text-fill: #cc0000;"/>
             </GridPane>
         </VBox>
     </center>
